@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Virtual Trial Room</title>
+<!-- import library -->
+<!-- angular -->
+<script type="text/javascript" src="/webjars/angularjs/1.4.9/angular.js"></script>
+<script type="text/javascript"
+	src="/webjars/angularjs/1.4.9/angular-route.js"></script>
+<!-- bootstrap -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.css"></link>
+
+<!-- import module, controller and service -->
+
+<script type="text/javascript" src="/js/vtlApp.js"></script>
+<script type="text/javascript" src="/js/controller/vtlCtrl.js"></script>
+<script type="text/javascript" src="/js/service/vtlService.js"></script>
+
+<link rel="stylesheet" href="/css/custom.css"></link>
+
+ 
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<span class="navbar-brand headertitle">Virtual Trial Room</span>
+			</div>
+		</div>
+	</nav>
+	<div class="container" data-ng-app="vtrApp"  data-ng-cotroller = "vtrCtrl">
+		<div data-ng-view=""></div>
+	</div>
+</body>
+</html>

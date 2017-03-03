@@ -1,0 +1,9 @@
+<div class="alert alert-error ng-scope" data-ng-show="webcamError"
+	style="">
+	<span>Webcam could not be started. Did you give access to it?</span>
+</div>
+<webcam channel="channel" on-streaming="onSuccess()"
+	on-error="onError(err)" on-stream="onStream(stream)"></webcam>
+<canvas id="snapshot" width="300" height="300"></canvas>
+<button data-ng-click="makeSnapshot()" class="btn btn-primary">Take
+	Picture</button>

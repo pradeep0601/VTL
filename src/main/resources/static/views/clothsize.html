@@ -1,0 +1,84 @@
+<div class="col-md-12">
+	<div class="col-md-12">
+		<div class="col-md-3">Select Size:</div>
+		<div class="col-md-5">
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<button class="btn btn-info btn-xs" data-ng-click = "selectSize('S')">S</button>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-info btn-xs" data-ng-click = "selectSize('M')">M</button>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-info btn-xs" data-ng-click = "selectSize('L')">L</button>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-info btn-xs" data-ng-click = "selectSize('XL')">XL</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<a href="#" data-toggle="modal" data-target="#sizeHelpModal">Sizing
+				Help</a>
+		</div>
+	</div>
+</div>
+
+<div id="sizeHelpModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title text-center">SIZE OPTIONS</h4>
+			</div>
+			<div class="modalbody">
+				<div class="col-md-12 sizechart">
+					<div class="col-md-6">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Size</th>
+									<th>S</th>
+									<th>M</th>
+									<th>L</th>
+									<th>XL</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Chest</td>
+									<td>41.5</td>
+									<td>43.5</td>
+									<td>45.5</td>
+									<td>47.5</td>
+								</tr>
+								<tr>
+									<td>Shoulder</td>
+									<td>16.5</td>
+									<td>17.3</td>
+									<td>18</td>
+									<td>18.3</td>
+								</tr>
+								<tr>
+									<td>Length</td>
+									<td>29</td>
+									<td>29.5</td>
+									<td>30</td>
+									<td>30.5</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-md-6">
+						<img src="/images/sizehelp.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" data-dismiss="modal"
+					class="btn btn-primary btn-xs">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
